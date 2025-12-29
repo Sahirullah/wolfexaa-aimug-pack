@@ -14,14 +14,17 @@
     align-items: stretch;
     margin-left: -15px;
     margin-right: -15px;
-    gap: 20px;
+    gap: 50px;
+    justify-content: space-between;
 }
 
 .pricing-one .row > [class*="col-"] {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex: 1;
+    max-width: calc(33.333% - 40px);
 }
 
 .pricing-one::before {
@@ -125,8 +128,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .pricing-one__single::before {
@@ -194,6 +197,12 @@
     text-align: center;
     margin-bottom: 2rem;
     position: relative;
+}
+
+/* Ensure no duplicate dollar signs */
+.pricing-one__price::before,
+.pricing-one__price::after {
+    content: none !important;
 }
 
 /* Buttons */
@@ -296,6 +305,12 @@
 @media (max-width: 1200px) {
     .pricing-one__single {
         padding: 2.5rem 1.5rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .pricing-one .row {
+        gap: 20px;
     }
     
     .pricing-one__price {
@@ -311,6 +326,12 @@
     .pricing-one__single {
         padding: 2rem 1.5rem;
         margin-bottom: 2rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .pricing-one .row {
+        gap: 15px;
     }
     
     .pricing-one__price {
@@ -425,15 +446,21 @@
 /* Responsive alignment fixes */
 @media (max-width: 992px) {
     .pricing-one .row {
-        display: block;
+        display: block !important;
+        gap: 0;
     }
     
     .pricing-one .row > [class*="col-"] {
-        display: block;
+        display: block !important;
+        margin-bottom: 2rem;
     }
     
     .pricing-one__single {
+        height: auto !important;
+        min-height: 500px;
         margin-bottom: 2rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 /* Additional fixes for perfect card alignment */
