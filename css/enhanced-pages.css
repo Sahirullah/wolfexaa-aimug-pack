@@ -666,3 +666,131 @@
         padding: 1.5rem;
     }
 }
+
+/* Enhanced Header Dropdown Styles */
+
+/* Main Dropdown Menu Background */
+.main-header .main-menu .navigation>li>ul {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    box-shadow: 0 20px 60px rgba(236, 72, 153, 0.15) !important;
+    border-radius: 16px !important;
+}
+
+/* Sub-dropdown Menu Background */
+.main-header .main-menu .navigation>li>ul>li>ul {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    box-shadow: 0 20px 60px rgba(236, 72, 153, 0.15) !important;
+    border-radius: 16px !important;
+}
+
+/* Dropdown Menu Items */
+.main-header .main-menu .navigation>li>ul>li>a {
+    color: #374151 !important;
+    font-weight: 500 !important;
+    padding: 12px 20px !important;
+    border-radius: 8px !important;
+    margin: 2px 0 !important;
+    transition: all 0.3s ease !important;
+    border-bottom: none !important;
+}
+
+/* Dropdown Menu Items Hover */
+.main-header .main-menu .navigation>li>ul>li:hover>a {
+    background: linear-gradient(135deg, #ec4899, #a855f7) !important;
+    color: white !important;
+    padding-left: 20px !important;
+    transform: translateX(5px) !important;
+}
+
+/* Dropdown Menu Items Hover Icon */
+.main-header .main-menu .navigation>li>ul>li:hover>a::before {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+/* Sub-dropdown Menu Items */
+.main-header .main-menu .navigation>li>ul>li>ul>li>a {
+    color: #374151 !important;
+    font-weight: 500 !important;
+    padding: 10px 18px !important;
+    border-radius: 6px !important;
+    margin: 1px 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Sub-dropdown Menu Items Hover */
+.main-header .main-menu .navigation>li>ul>li>ul>li:hover>a {
+    background: linear-gradient(135deg, #ec4899, #a855f7) !important;
+    color: white !important;
+    transform: translateX(3px) !important;
+}
+
+/* Dropdown Arrow Icons */
+.main-header .main-menu .navigation>li>ul>li.dropdown>a:after {
+    color: #6b7280 !important;
+    transition: color 0.3s ease !important;
+}
+
+.main-header .main-menu .navigation>li>ul>li.dropdown:hover>a:after {
+    color: white !important;
+}
+
+/* Enhanced Glass Effect */
+.main-header .main-menu .navigation>li>ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 16px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.main-header .main-menu .navigation>li>ul>li>ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 16px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Dropdown Animation Enhancement */
+.main-header .main-menu .navigation>li:hover>ul {
+    transform: scaleY(1) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Mobile Menu Dropdown Styles */
+.mobile-menu .menu-box .navigation>li>ul {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.1) !important;
+}
+
+.mobile-menu .menu-box .navigation>li>ul>li>a {
+    color: #374151 !important;
+    padding: 10px 15px !important;
+    border-radius: 6px !important;
+    margin: 1px 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.mobile-menu .menu-box .navigation>li>ul>li:hover>a {
+    background: linear-gradient(135deg, #ec4899, #a855f7) !important;
+    color: white !important;
+}
