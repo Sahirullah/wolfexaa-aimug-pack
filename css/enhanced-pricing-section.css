@@ -65,11 +65,10 @@
     }
 }
 
-/* Switch Toggle */
+/* Switch Toggle - Remove extra padding since button is hidden */
 .pricing-one__switch-toggle-title-box {
     margin-bottom: 4rem;
     position: relative;
-    padding-top: 30px;
 }
 
 /* Tabbed Content Spacing */
@@ -160,36 +159,11 @@
     box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
 }
 
-/* Pricing discount button - Override all conflicting styles */
+/* Hide the pricing discount button */
 .pricing-one__discount {
-    background: linear-gradient(135deg, #ec4899, #a855f7) !important;
-    color: #ffffff !important;
-    padding: 12px 24px !important;
-    border-radius: 30px !important;
-    font-weight: 700 !important;
-    font-size: 14px !important;
-    position: absolute !important;
-    top: -15px !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
-    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.4) !important;
-    min-width: 100px !important;
-    width: auto !important;
-    height: auto !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-    z-index: 100 !important;
-    text-shadow: none !important;
-    font-family: 'Inter', sans-serif !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-    backdrop-filter: blur(10px) !important;
-    letter-spacing: 0.5px !important;
-    transition: all 0.3s ease !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    line-height: 1.2 !important;
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }
 
 /* Ensure text is visible with multiple selectors */
@@ -220,8 +194,8 @@
         right: auto !important;
         transform: translateX(-50%) !important;
         font-size: 12px !important;
-        padding: 10px 20px !important;
-        min-width: 80px !important;
+        padding: 10px 30px !important;
+        min-width: 120px !important;
         color: #ffffff !important;
         background: linear-gradient(135deg, #ec4899, #a855f7) !important;
     }
