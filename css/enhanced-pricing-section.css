@@ -14,6 +14,7 @@
     align-items: stretch;
     margin-left: -15px;
     margin-right: -15px;
+    gap: 20px;
 }
 
 .pricing-one .row > [class*="col-"] {
@@ -124,6 +125,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .pricing-one__single::before {
@@ -191,15 +194,6 @@
     text-align: center;
     margin-bottom: 2rem;
     position: relative;
-}
-
-.pricing-one__price::before {
-    content: '$';
-    font-size: 2rem;
-    position: absolute;
-    top: 0.5rem;
-    left: -1.5rem;
-    color: #ec4899;
 }
 
 /* Buttons */
