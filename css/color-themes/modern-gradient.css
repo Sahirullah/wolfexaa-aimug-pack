@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* Pink Light Color Theme */
+
+:root {
+	/* Primary pink colors */
+	--thm-base: #ec4899;
+	--thm-base-rgb: 236, 72, 153;
+	
+	/* Secondary colors */
+	--thm-secondary: #f472b6;
+	--thm-secondary-rgb: 244, 114, 182;
+	
+	/* Accent colors */
+	--thm-accent: #fbbf24;
+	--thm-accent-rgb: 251, 191, 36;
+	
+	/* Light pink variations */
+	--thm-light-pink: #fce7f3;
+	--thm-light-pink-rgb: 252, 231, 243;
+	
+	/* Soft pink */
+	--thm-soft-pink: #fbcfe8;
+	--thm-soft-pink-rgb: 251, 207, 232;
+	
+	/* Success/Green */
+	--thm-success: #34d399;
+	--thm-success-rgb: 52, 211, 153;
+	
+	/* Warning/Orange */
+	--thm-warning: #fbbf24;
+	--thm-warning-rgb: 251, 191, 36;
+	
+	/* Error/Red */
+	--thm-error: #f87171;
+	--thm-error-rgb: 248, 113, 113;
+	
+	/* Pink gradients */
+	--thm-gradient-primary: linear-gradient(135deg, #ec4899 0%, #f472b6 50%, #fbbf24 100%);
+	--thm-gradient-secondary: linear-gradient(135deg, #f472b6 0%, #fbbf24 100%);
+	--thm-gradient-accent: linear-gradient(135deg, #fbbf24 0%, #34d399 100%);
+	--thm-gradient-soft: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+	
+	/* Light background gradients */
+	--thm-bg-gradient: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbcfe8 100%);
+	--thm-card-gradient: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(244, 114, 182, 0.05) 100%);
+	--thm-dark-card-gradient: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(244, 114, 182, 0.1) 100%);
+	
+	/* Updated main colors for light theme */
+	--thm-body-bg: #fdf2f8;
+	--thm-main-bg: #fce7f3;
+	--thm-gradient-color1: #ec4899;
+	--thm-gradient-color2: #f472b6;
+	--thm-gradient: var(--thm-gradient-primary);
+	
+	/* Text colors for light theme */
+	--thm-text-dark: #374151;
+	--thm-text-light: #6b7280;
+	--thm-text-muted: #9ca3af;
+}

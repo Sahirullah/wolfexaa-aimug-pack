@@ -1,0 +1,256 @@
+/* Light Theme Text Color Overrides */
+
+/* Ensure all text is readable on light backgrounds */
+body {
+    color: var(--thm-text-light) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--thm-text-dark) !important;
+}
+
+/* Paragraphs and general text */
+p {
+    color: var(--thm-text-light) !important;
+}
+
+/* Links */
+a {
+    color: var(--thm-base) !important;
+}
+
+a:hover {
+    color: var(--thm-secondary) !important;
+}
+
+/* Navigation text */
+.main-menu .navigation li a {
+    color: var(--thm-text-dark) !important;
+}
+
+.main-menu .navigation li a:hover {
+    color: var(--thm-base) !important;
+}
+
+/* Feature section text */
+.feature-one__title {
+    color: var(--thm-text-dark) !important;
+}
+
+.feature-one__title-2 a {
+    color: var(--thm-text-dark) !important;
+}
+
+/* Solutions section text */
+.solutions-one__title a {
+    color: var(--thm-text-dark) !important;
+}
+
+.solutions-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+.solutions-two__content-one-title-box h3,
+.solutions-two__content-two-title-box h3 {
+    color: var(--thm-text-dark) !important;
+}
+
+.solutions-two__content-one-text-1,
+.solutions-two__content-two-text-1 {
+    color: var(--thm-text-light) !important;
+}
+
+/* Section titles */
+.section-title__title {
+    color: var(--thm-text-dark) !important;
+}
+
+.section-title__tagline {
+    color: var(--thm-base) !important;
+}
+
+/* Brand section */
+.brand-one__title {
+    color: var(--thm-text-dark) !important;
+}
+
+/* Footer text */
+.footer-widget h3,
+.footer-widget h4,
+.footer-widget h5 {
+    color: var(--thm-text-dark) !important;
+}
+
+.footer-widget p,
+.footer-widget li,
+.footer-widget a {
+    color: var(--thm-text-light) !important;
+}
+
+.footer-widget a:hover {
+    color: var(--thm-base) !important;
+}
+
+/* Login page text */
+.login-page h2,
+.login-page h3 {
+    color: var(--thm-text-dark) !important;
+}
+
+.login-page p,
+.login-page label {
+    color: var(--thm-text-light) !important;
+}
+
+/* Contact page text */
+.contact-one h2,
+.contact-one h3 {
+    color: var(--thm-text-dark) !important;
+}
+
+.contact-one p {
+    color: var(--thm-text-light) !important;
+}
+
+/* Blog page text */
+.blog-one__title a {
+    color: var(--thm-text-dark) !important;
+}
+
+.blog-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+.blog-one__date {
+    color: var(--thm-text-muted) !important;
+}
+
+/* Career page text */
+.career-one__title a {
+    color: var(--thm-text-dark) !important;
+}
+
+.career-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* About page text */
+.about-one h2,
+.about-one h3 {
+    color: var(--thm-text-dark) !important;
+}
+
+.about-one p {
+    color: var(--thm-text-light) !important;
+}
+
+/* Team section text */
+.team-one__name {
+    color: var(--thm-text-dark) !important;
+}
+
+.team-one__designation {
+    color: var(--thm-text-light) !important;
+}
+
+/* Testimonial text */
+.testimonial-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+.testimonial-one__client-name {
+    color: var(--thm-text-dark) !important;
+}
+
+/* Counter text */
+.counter-one__count {
+    color: var(--thm-base) !important;
+}
+
+.counter-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* FAQ text */
+.faq-one__title {
+    color: var(--thm-text-dark) !important;
+}
+
+.faq-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Pricing text */
+.pricing-one__price {
+    color: var(--thm-base) !important;
+}
+
+.pricing-one__title {
+    color: var(--thm-text-dark) !important;
+}
+
+.pricing-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Page title text */
+.page-title__title {
+    color: var(--thm-text-dark) !important;
+}
+
+.page-title__breadcrumb li {
+    color: var(--thm-text-light) !important;
+}
+
+/* 404 page text */
+.error-404__title {
+    color: var(--thm-base) !important;
+}
+
+.error-404__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Form labels and text */
+label {
+    color: var(--thm-text-dark) !important;
+}
+
+.form-text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Button text */
+.thm-btn {
+    color: white !important;
+}
+
+.thm-btn:hover {
+    color: white !important;
+}
+
+/* Ensure white text on pink backgrounds */
+.feature-one__ai-pack h3,
+.feature-one__ai-pack p {
+    color: white !important;
+}
+
+/* Rating text */
+.feature-one__rating-text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Mobile menu text */
+.mobile-menu .navigation li a {
+    color: var(--thm-text-dark) !important;
+}
+
+/* Dropdown menu text */
+.main-menu .navigation > li > ul li a {
+    color: var(--thm-text-dark) !important;
+}
+
+.main-menu .navigation > li > ul li a:hover {
+    color: var(--thm-base) !important;
+}

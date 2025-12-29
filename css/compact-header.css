@@ -1,0 +1,80 @@
+/* Ultra Compact Header Styling */
+
+/* Force minimal header height */
+.main-header {
+    min-height: auto !important;
+    height: auto !important;
+}
+
+.main-header .header-lower {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.main-header .main-menu__wrapper {
+    min-height: auto !important;
+    height: auto !important;
+}
+
+.main-header .inner-container {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+/* Ultra compact logo box */
+.main-header-one__logo-box,
+.main-header-two__logo-box,
+.main-header-three__logo-box {
+    padding: 6px 0 !important;
+    min-height: auto !important;
+}
+
+/* Ultra compact navigation */
+.main-header .main-menu .navigation > li > a {
+    padding: 8px 0px !important;
+    line-height: 20px !important;
+    font-size: 13px !important;
+}
+
+/* Compact outer box */
+.outer-box {
+    min-height: auto !important;
+    height: auto !important;
+}
+
+/* Compact nav outer */
+.nav-outer {
+    min-height: auto !important;
+    height: auto !important;
+}
+
+/* Ensure login/signup buttons are compact */
+.main-header__login-sing-up li a {
+    padding: 6px 12px !important;
+    font-size: 13px !important;
+}
+
+/* Mobile nav toggler compact */
+.mobile-nav-toggler {
+    padding: 8px !important;
+}
+
+/* Remove any extra margins or padding */
+.main-header * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Ensure flexbox items are aligned properly in compact header */
+.main-header .d-flex {
+    align-items: center !important;
+    min-height: auto !important;
+}
+
+/* Compact logo images */
+.main-header img {
+    max-width: 140px !important;
+    height: auto !important;
+}

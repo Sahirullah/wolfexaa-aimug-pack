@@ -1,0 +1,265 @@
+/* Modern Form Enhancements - Pink Light Theme */
+
+/* Enhanced login page */
+.login-page {
+    background: var(--thm-bg-gradient) !important;
+    min-height: 100vh !important;
+}
+
+.login-page__inner {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 20px 40px rgba(236, 72, 153, 0.15) !important;
+}
+
+.login-page__logo img {
+    filter: drop-shadow(0 4px 8px rgba(236, 72, 153, 0.3)) !important;
+}
+
+/* Enhanced form inputs */
+.login-page__input-box input,
+.contact-form__input-box input,
+.contact-form__input-box textarea {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(236, 72, 153, 0.3) !important;
+    border-radius: 12px !important;
+    color: var(--thm-text-dark) !important;
+    padding: 14px 18px !important;
+    transition: all 0.3s ease !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+.login-page__input-box input:focus,
+.contact-form__input-box input:focus,
+.contact-form__input-box textarea:focus {
+    border-color: var(--thm-base) !important;
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.login-page__input-box input::placeholder,
+.contact-form__input-box input::placeholder,
+.contact-form__input-box textarea::placeholder {
+    color: var(--thm-text-muted) !important;
+}
+
+/* Enhanced sign-in options */
+.login-page__sign-option {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(236, 72, 153, 0.3) !important;
+    border-radius: 12px !important;
+    color: var(--thm-text-dark) !important;
+    transition: all 0.3s ease !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+.login-page__sign-option:hover {
+    background: rgba(236, 72, 153, 0.1) !important;
+    border-color: var(--thm-base) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(236, 72, 153, 0.2) !important;
+    color: var(--thm-text-dark) !important;
+}
+
+/* Enhanced contact page */
+.contact-one {
+    background: var(--thm-bg-gradient) !important;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 20px !important;
+    padding: 40px !important;
+    box-shadow: 0 15px 35px rgba(236, 72, 153, 0.1) !important;
+}
+
+/* Enhanced page titles */
+.page-title {
+    background: var(--thm-bg-gradient) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.page-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(244, 114, 182, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.page-title__title {
+    background: linear-gradient(135deg, var(--thm-text-dark) 0%, #6b7280 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    font-weight: 700 !important;
+}
+
+/* Enhanced breadcrumb */
+.page-title__breadcrumb li a {
+    color: var(--thm-text-light) !important;
+    transition: all 0.3s ease !important;
+}
+
+.page-title__breadcrumb li a:hover {
+    color: var(--thm-base) !important;
+}
+
+/* Enhanced 404 page */
+.error-404 {
+    background: var(--thm-bg-gradient) !important;
+    min-height: 100vh !important;
+}
+
+.error-404__content {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 20px !important;
+    padding: 60px 40px !important;
+    box-shadow: 0 20px 40px rgba(236, 72, 153, 0.15) !important;
+}
+
+.error-404__title {
+    background: var(--thm-gradient-primary) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    font-weight: 800 !important;
+}
+
+.error-404__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Enhanced career page */
+.career-one {
+    background: var(--thm-bg-gradient) !important;
+}
+
+.career-one__single {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.1) !important;
+}
+
+.career-one__single:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(236, 72, 153, 0.2) !important;
+    border-color: rgba(236, 72, 153, 0.4) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.career-one__title a {
+    color: var(--thm-text-dark) !important;
+}
+
+.career-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Enhanced blog cards */
+.blog-one__single {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.1) !important;
+}
+
+.blog-one__single:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(236, 72, 153, 0.2) !important;
+    border-color: rgba(236, 72, 153, 0.4) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.blog-one__img {
+    border-radius: 12px 12px 0 0 !important;
+    overflow: hidden !important;
+}
+
+.blog-one__img img {
+    transition: transform 0.3s ease !important;
+}
+
+.blog-one__single:hover .blog-one__img img {
+    transform: scale(1.05) !important;
+}
+
+.blog-one__title a {
+    color: var(--thm-text-dark) !important;
+}
+
+.blog-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Enhanced about page */
+.about-one {
+    background: var(--thm-bg-gradient) !important;
+}
+
+.about-one__content {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 20px !important;
+    padding: 40px !important;
+    box-shadow: 0 15px 35px rgba(236, 72, 153, 0.1) !important;
+}
+
+.about-one__title {
+    color: var(--thm-text-dark) !important;
+}
+
+.about-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Enhanced team section */
+.team-one__single {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.1) !important;
+}
+
+.team-one__single:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(236, 72, 153, 0.2) !important;
+    border-color: rgba(236, 72, 153, 0.4) !important;
+}
+
+/* Enhanced testimonial section */
+.testimonial-one__single {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.1) !important;
+}
+
+.testimonial-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+.testimonial-one__client-name {
+    color: var(--thm-text-dark) !important;
+}

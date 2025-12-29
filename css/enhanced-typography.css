@@ -1,0 +1,320 @@
+/* Enhanced Typography & Icon Styling */
+
+/* Improved Font Loading and Base Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Enhanced Typography System */
+:root {
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Base Typography Improvements */
+body {
+    font-family: var(--font-primary) !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    letter-spacing: -0.01em !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Enhanced Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading) !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    letter-spacing: -0.01em !important;
+    margin-bottom: 0.5em !important;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+}
+
+h2 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem) !important;
+    font-weight: 600 !important;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem) !important;
+    font-weight: 600 !important;
+}
+
+h4 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem) !important;
+    font-weight: 500 !important;
+}
+
+h5 {
+    font-size: clamp(1.1rem, 1.5vw, 1.25rem) !important;
+    font-weight: 500 !important;
+}
+
+h6 {
+    font-size: clamp(1rem, 1.25vw, 1.125rem) !important;
+    font-weight: 500 !important;
+}
+
+/* Enhanced Paragraphs */
+p {
+    font-family: var(--font-primary) !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 1.2em !important;
+    color: var(--thm-text-light) !important;
+}
+
+/* Large Text */
+.lead, .text-large {
+    font-size: 1.125rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    color: var(--thm-text-light) !important;
+}
+
+/* Small Text */
+.text-small, small {
+    font-size: 0.875rem !important;
+    color: var(--thm-text-muted) !important;
+}
+
+/* Enhanced Feature Section Typography */
+.feature-one__title {
+    font-family: var(--font-display) !important;
+    font-size: clamp(1.75rem, 4vw, 2.5rem) !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 2rem !important;
+}
+
+.feature-one__title span {
+    font-weight: 700 !important;
+    background: var(--thm-gradient-primary) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Enhanced Section Titles */
+.section-title__title {
+    font-family: var(--font-heading) !important;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem) !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    letter-spacing: -0.01em !important;
+    margin-bottom: 1rem !important;
+}
+
+.section-title__tagline {
+    font-family: var(--font-primary) !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    margin-bottom: 0.5rem !important;
+    display: inline-block !important;
+    padding: 0.5rem 1rem !important;
+    background: rgba(236, 72, 153, 0.1) !important;
+    border-radius: 50px !important;
+    color: var(--thm-base) !important;
+}
+
+/* Enhanced Card Typography */
+.solutions-one__title a,
+.feature-one__title-2 a {
+    font-family: var(--font-heading) !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    letter-spacing: -0.01em !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.solutions-one__text {
+    font-family: var(--font-primary) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    color: var(--thm-text-light) !important;
+    margin-top: 0.75rem !important;
+}
+
+/* Enhanced Navigation Typography */
+.main-menu .navigation > li > a {
+    font-family: var(--font-primary) !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.01em !important;
+    text-decoration: none !important;
+}
+
+/* Enhanced Button Typography */
+.thm-btn {
+    font-family: var(--font-primary) !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em !important;
+    text-transform: none !important;
+}
+
+/* Enhanced Login/Signup Button Typography */
+.main-header__login-sing-up li a {
+    font-family: var(--font-primary) !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.01em !important;
+}
+
+/* Enhanced Icon Styling */
+.solutions-one__icon,
+.feature-one__icon {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(236, 72, 153, 0.15) !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 20px rgba(236, 72, 153, 0.08) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.solutions-one__icon::before,
+.feature-one__icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--thm-gradient-primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 16px;
+}
+
+.solutions-one__single:hover .solutions-one__icon::before,
+.feature-one__single:hover .feature-one__icon::before {
+    opacity: 0.1;
+}
+
+.solutions-one__icon img,
+.feature-one__icon img {
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    z-index: 2 !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) !important;
+}
+
+.solutions-one__single:hover .solutions-one__icon img,
+.feature-one__single:hover .feature-one__icon img {
+    transform: scale(1.1) !important;
+    filter: drop-shadow(0 4px 8px rgba(236, 72, 153, 0.2)) !important;
+}
+
+/* Enhanced Icon Hover Effects */
+.solutions-one__single:hover .solutions-one__icon {
+    transform: translateY(-4px) scale(1.05) !important;
+    box-shadow: 0 12px 40px rgba(236, 72, 153, 0.2) !important;
+    border-color: rgba(236, 72, 153, 0.3) !important;
+    background: rgba(255, 255, 255, 1) !important;
+}
+
+/* Enhanced Rating Section Typography */
+.feature-one__rating-text {
+    font-family: var(--font-primary) !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: var(--thm-text-light) !important;
+}
+
+/* Enhanced Footer Typography */
+.footer-widget h3,
+.footer-widget h4,
+.footer-widget h5 {
+    font-family: var(--font-heading) !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+}
+
+.footer-widget p,
+.footer-widget li {
+    font-family: var(--font-primary) !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Enhanced Form Typography */
+.login-page h2,
+.login-page h3,
+.contact-form h2,
+.contact-form h3 {
+    font-family: var(--font-heading) !important;
+    font-weight: 600 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Enhanced Link Styling */
+a {
+    color: var(--thm-base) !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+a:hover {
+    color: var(--thm-secondary) !important;
+    text-decoration: none !important;
+}
+
+/* Enhanced Text Selection */
+::selection {
+    background: rgba(236, 72, 153, 0.2) !important;
+    color: var(--thm-text-dark) !important;
+}
+
+::-moz-selection {
+    background: rgba(236, 72, 153, 0.2) !important;
+    color: var(--thm-text-dark) !important;
+}
+
+/* Enhanced Focus States */
+*:focus {
+    outline: 2px solid rgba(236, 72, 153, 0.5) !important;
+    outline-offset: 2px !important;
+}
+
+/* Responsive Typography Adjustments */
+@media (max-width: 768px) {
+    .feature-one__title {
+        font-size: clamp(1.5rem, 6vw, 2rem) !important;
+        line-height: 1.4 !important;
+    }
+    
+    .section-title__title {
+        font-size: clamp(1.5rem, 5vw, 2rem) !important;
+    }
+    
+    .solutions-one__icon,
+    .feature-one__icon {
+        padding: 16px !important;
+    }
+    
+    .solutions-one__icon img,
+    .feature-one__icon img {
+        width: 28px !important;
+        height: 28px !important;
+    }
+}

@@ -1,0 +1,360 @@
+/* Modern Styling Enhancements - Pink Light Theme */
+
+/* Enhanced body background with light gradient */
+.body-bg-color {
+    background: var(--thm-bg-gradient);
+    min-height: 100vh;
+}
+
+/* Modern button styles */
+.thm-btn {
+    background: var(--thm-gradient-primary) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 14px 28px !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    color: white !important;
+}
+
+.thm-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.4) !important;
+    color: white !important;
+}
+
+.thm-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.thm-btn:hover::before {
+    left: 100%;
+}
+
+/* Enhanced header styling */
+.main-header {
+    backdrop-filter: blur(10px) !important;
+    background: rgba(253, 242, 248, 0.95) !important;
+    border-bottom: 1px solid rgba(236, 72, 153, 0.2) !important;
+    box-shadow: 0 2px 20px rgba(236, 72, 153, 0.1) !important;
+}
+
+.main-header-one__logo-box {
+    padding: 8px 0 !important;
+}
+
+/* Reduce navigation padding for compact header */
+.main-header .main-menu .navigation > li > a {
+    padding: 10px 0px !important;
+    line-height: 24px !important;
+}
+
+/* Additional header height reduction */
+.main-header .header-lower {
+    min-height: auto !important;
+}
+
+.main-header .main-menu__wrapper {
+    min-height: auto !important;
+}
+
+/* Enhanced navigation */
+.main-menu .navigation > li > a {
+    color: var(--thm-text-dark) !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+}
+
+.main-menu .navigation > li > a:hover {
+    color: var(--thm-base) !important;
+}
+
+.main-menu .navigation > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--thm-gradient-primary);
+    transition: width 0.3s ease;
+}
+
+.main-menu .navigation > li > a:hover::after {
+    width: 100%;
+}
+
+/* Enhanced feature section */
+.feature-one {
+    background: var(--thm-bg-gradient) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.feature-one::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(244, 114, 182, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(251, 191, 36, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.feature-one__title {
+    background: linear-gradient(135deg, var(--thm-text-dark) 0%, #6b7280 50%, #9ca3af 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+}
+
+.feature-one__title span {
+    background: var(--thm-gradient-primary) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Enhanced cards */
+.solutions-one__single {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 20px rgba(236, 72, 153, 0.1) !important;
+}
+
+.solutions-one__single:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(236, 72, 153, 0.2) !important;
+    border-color: rgba(236, 72, 153, 0.4) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.solutions-one__single::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--thm-gradient-primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.solutions-one__single:hover::before {
+    opacity: 1;
+}
+
+/* Enhanced icons */
+.solutions-one__icon,
+.feature-one__icon {
+    background: var(--thm-gradient-soft) !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+.solutions-one__single:hover .solutions-one__icon {
+    background: var(--thm-gradient-secondary) !important;
+    transform: scale(1.1) !important;
+}
+
+/* Enhanced text colors */
+.solutions-one__title a,
+.feature-one__title-2 a {
+    color: var(--thm-text-dark) !important;
+    transition: all 0.3s ease !important;
+}
+
+.solutions-one__title a:hover,
+.feature-one__title-2 a:hover {
+    color: var(--thm-base) !important;
+}
+
+.solutions-one__text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Enhanced section titles */
+.section-title__title {
+    background: linear-gradient(135deg, var(--thm-text-dark) 0%, #6b7280 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    font-weight: 700 !important;
+}
+
+.section-title__tagline {
+    background: var(--thm-gradient-primary) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    font-weight: 600 !important;
+}
+
+/* Enhanced login/signup buttons */
+.main-header__login-sing-up li a {
+    color: var(--thm-text-dark) !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+}
+
+.main-header__login-sing-up li:last-child a {
+    background: var(--thm-gradient-primary) !important;
+    color: white !important;
+}
+
+.main-header__login-sing-up li a:hover {
+    color: var(--thm-base) !important;
+}
+
+.main-header__login-sing-up li:last-child a:hover {
+    color: white !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3) !important;
+}
+
+/* Enhanced mobile menu */
+.mobile-menu {
+    background: rgba(253, 242, 248, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.mobile-menu .navigation li a {
+    color: var(--thm-text-dark) !important;
+}
+
+/* Enhanced footer */
+.main-footer {
+    background: var(--thm-bg-gradient) !important;
+    border-top: 1px solid rgba(236, 72, 153, 0.2) !important;
+}
+
+.footer-widget__about-text,
+.footer-widget p {
+    color: var(--thm-text-light) !important;
+}
+
+.footer-widget h3,
+.footer-widget h4 {
+    color: var(--thm-text-dark) !important;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.flaot-bob-y {
+    animation: float 3s ease-in-out infinite !important;
+}
+
+@keyframes floatX {
+    0%, 100% { transform: translateX(0px); }
+    50% { transform: translateX(-10px); }
+}
+
+.flaot-bob-x {
+    animation: floatX 4s ease-in-out infinite !important;
+}
+
+/* Enhanced rating section */
+.feature-one__rating-box {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.1) !important;
+}
+
+.feature-one__rating-text {
+    color: var(--thm-text-light) !important;
+}
+
+/* Enhanced AI Pack section */
+.feature-one__ai-pack {
+    background: var(--thm-gradient-primary) !important;
+    border-radius: 12px !important;
+    padding: 16px 24px !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3) !important;
+}
+
+.feature-one__ai-pack h3 {
+    color: white !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+/* Enhanced solutions two section */
+.solutions-two {
+    background: var(--thm-bg-gradient) !important;
+}
+
+.solutions-two__content-one {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 20px !important;
+    padding: 40px !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+}
+
+.solutions-two__content-two-single {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 20px !important;
+    padding: 30px !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+.solutions-two__content-two-single:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(236, 72, 153, 0.2) !important;
+}
+
+/* Enhanced brand section */
+.brand-one {
+    background: var(--thm-bg-gradient) !important;
+}
+
+.brand-one__title {
+    color: var(--thm-text-dark) !important;
+}
+
+/* Enhanced collaboration section */
+.collaboration-one {
+    background: var(--thm-bg-gradient) !important;
+}

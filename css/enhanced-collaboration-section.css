@@ -1,0 +1,437 @@
+/* Enhanced Collaboration Section Styling */
+
+/* Main collaboration section */
+.collaboration-one {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%) !important;
+    padding: 100px 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    min-height: 600px !important;
+}
+
+.collaboration-one::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(236, 72, 153, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.collaboration-one::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* Enhanced inner container */
+.collaboration-one__inner {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* Enhanced title section */
+.collaboration-one__title-box {
+    text-align: center !important;
+    margin-bottom: 80px !important;
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+.collaboration-one__sub-title {
+    font-family: var(--font-primary) !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    color: rgba(236, 72, 153, 0.9) !important;
+    margin-bottom: 16px !important;
+    display: inline-block !important;
+    padding: 8px 20px !important;
+    background: rgba(236, 72, 153, 0.1) !important;
+    border: 1px solid rgba(236, 72, 153, 0.2) !important;
+    border-radius: 25px !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+}
+
+.collaboration-one__sub-title:hover {
+    background: rgba(236, 72, 153, 0.15) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.2) !important;
+}
+
+.collaboration-one__title {
+    font-family: var(--font-heading) !important;
+    font-size: clamp(2rem, 4vw, 3rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    margin: 0 !important;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Enhanced icon container */
+.collaboration-one__icon-box {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 400px !important;
+    z-index: 3 !important;
+}
+
+/* Central main icon */
+.collaboration-one__icon {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 120px !important;
+    height: 120px !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%) !important;
+    border: 2px solid rgba(236, 72, 153, 0.3) !important;
+    border-radius: 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(15px) !important;
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        0 8px 30px rgba(236, 72, 153, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    z-index: 10 !important;
+}
+
+.collaboration-one__icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--thm-gradient-primary);
+    opacity: 0;
+    border-radius: 22px;
+    transition: opacity 0.4s ease;
+}
+
+.collaboration-one__icon:hover::before {
+    opacity: 0.1;
+}
+
+.collaboration-one__icon:hover {
+    transform: translate(-50%, -50%) scale(1.1) !important;
+    box-shadow: 
+        0 30px 80px rgba(0, 0, 0, 0.4),
+        0 12px 40px rgba(236, 72, 153, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+    border-color: rgba(236, 72, 153, 0.5) !important;
+}
+
+.collaboration-one__icon img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 4px 12px rgba(236, 72, 153, 0.3)) !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.collaboration-one__icon:hover img {
+    transform: scale(1.1) !important;
+    filter: drop-shadow(0 6px 20px rgba(236, 72, 153, 0.4)) !important;
+}
+
+/* Surrounding app icons */
+.collaboration-one__icon-1,
+.collaboration-one__icon-2,
+.collaboration-one__icon-3,
+.collaboration-one__icon-4,
+.collaboration-one__icon-5,
+.collaboration-one__icon-6,
+.collaboration-one__icon-7 {
+    position: absolute !important;
+    width: 80px !important;
+    height: 80px !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        0 4px 16px rgba(236, 72, 153, 0.1) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer !important;
+}
+
+.collaboration-one__icon-1:hover,
+.collaboration-one__icon-2:hover,
+.collaboration-one__icon-3:hover,
+.collaboration-one__icon-4:hover,
+.collaboration-one__icon-5:hover,
+.collaboration-one__icon-6:hover,
+.collaboration-one__icon-7:hover {
+    transform: translateY(-8px) scale(1.05) !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%) !important;
+    border-color: rgba(236, 72, 153, 0.3) !important;
+    box-shadow: 
+        0 16px 48px rgba(0, 0, 0, 0.3),
+        0 8px 24px rgba(236, 72, 153, 0.2) !important;
+}
+
+/* Positioning for surrounding icons */
+.collaboration-one__icon-1 {
+    top: 20% !important;
+    left: 20% !important;
+}
+
+.collaboration-one__icon-2 {
+    top: 10% !important;
+    right: 25% !important;
+}
+
+.collaboration-one__icon-3 {
+    top: 30% !important;
+    right: 10% !important;
+}
+
+.collaboration-one__icon-4 {
+    bottom: 30% !important;
+    right: 15% !important;
+}
+
+.collaboration-one__icon-5 {
+    bottom: 10% !important;
+    left: 30% !important;
+}
+
+.collaboration-one__icon-6 {
+    bottom: 25% !important;
+    left: 15% !important;
+}
+
+.collaboration-one__icon-7 {
+    top: 40% !important;
+    left: 8% !important;
+}
+
+/* Icon images */
+.collaboration-one__icon-1 img,
+.collaboration-one__icon-2 img,
+.collaboration-one__icon-3 img,
+.collaboration-one__icon-4 img,
+.collaboration-one__icon-5 img,
+.collaboration-one__icon-6 img,
+.collaboration-one__icon-7 img {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain !important;
+    transition: all 0.3s ease !important;
+    filter: brightness(0.9) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2)) !important;
+}
+
+.collaboration-one__icon-1:hover img,
+.collaboration-one__icon-2:hover img,
+.collaboration-one__icon-3:hover img,
+.collaboration-one__icon-4:hover img,
+.collaboration-one__icon-5:hover img,
+.collaboration-one__icon-6:hover img,
+.collaboration-one__icon-7:hover img {
+    transform: scale(1.1) !important;
+    filter: brightness(1.1) drop-shadow(0 4px 12px rgba(236, 72, 153, 0.3)) !important;
+}
+
+/* Enhanced floating shapes and stars */
+.collaboration-one__star-1,
+.collaboration-one__star-2,
+.collaboration-one__star-3,
+.collaboration-one__star-4 {
+    position: absolute !important;
+    z-index: 1 !important;
+    opacity: 0.7 !important;
+    transition: all 0.4s ease !important;
+}
+
+.collaboration-one__star-1:hover,
+.collaboration-one__star-2:hover,
+.collaboration-one__star-3:hover,
+.collaboration-one__star-4:hover {
+    opacity: 1 !important;
+    transform: scale(1.2) !important;
+}
+
+.collaboration-one__shape-1,
+.collaboration-one__shape-2 {
+    position: absolute !important;
+    z-index: 1 !important;
+    opacity: 0.4 !important;
+    transition: all 0.4s ease !important;
+}
+
+/* Connection lines animation */
+@keyframes connectionPulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.02);
+    }
+}
+
+.collaboration-one__icon-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border: 1px dashed rgba(236, 72, 153, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: connectionPulse 4s ease-in-out infinite;
+}
+
+.collaboration-one__icon-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px dashed rgba(139, 92, 246, 0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: connectionPulse 3s ease-in-out infinite reverse;
+}
+
+/* Enhanced floating animations */
+@keyframes collaborationFloat {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-15px) rotate(3deg); 
+    }
+}
+
+@keyframes collaborationFloatX {
+    0%, 100% { 
+        transform: translateX(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateX(-12px) rotate(-2deg); 
+    }
+}
+
+.zoominout {
+    animation: collaborationFloat 5s ease-in-out infinite !important;
+}
+
+.float-bob-x {
+    animation: collaborationFloatX 6s ease-in-out infinite !important;
+}
+
+.float-bob-y {
+    animation: collaborationFloat 4s ease-in-out infinite !important;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .collaboration-one__icon {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    
+    .collaboration-one__icon img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .collaboration-one__icon-1,
+    .collaboration-one__icon-2,
+    .collaboration-one__icon-3,
+    .collaboration-one__icon-4,
+    .collaboration-one__icon-5,
+    .collaboration-one__icon-6,
+    .collaboration-one__icon-7 {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    
+    .collaboration-one__icon-1 img,
+    .collaboration-one__icon-2 img,
+    .collaboration-one__icon-3 img,
+    .collaboration-one__icon-4 img,
+    .collaboration-one__icon-5 img,
+    .collaboration-one__icon-6 img,
+    .collaboration-one__icon-7 img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .collaboration-one {
+        padding: 80px 0 !important;
+        min-height: 500px !important;
+    }
+    
+    .collaboration-one__title-box {
+        margin-bottom: 60px !important;
+    }
+    
+    .collaboration-one__icon-box {
+        min-height: 350px !important;
+    }
+    
+    .collaboration-one__icon {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+    .collaboration-one__icon img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .collaboration-one__icon-1,
+    .collaboration-one__icon-2,
+    .collaboration-one__icon-3,
+    .collaboration-one__icon-4,
+    .collaboration-one__icon-5,
+    .collaboration-one__icon-6,
+    .collaboration-one__icon-7 {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .collaboration-one__icon-1 img,
+    .collaboration-one__icon-2 img,
+    .collaboration-one__icon-3 img,
+    .collaboration-one__icon-4 img,
+    .collaboration-one__icon-5 img,
+    .collaboration-one__icon-6 img,
+    .collaboration-one__icon-7 img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
