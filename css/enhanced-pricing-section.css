@@ -160,34 +160,71 @@
     box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
 }
 
+/* Pricing discount button - Override all conflicting styles */
 .pricing-one__discount {
     background: linear-gradient(135deg, #ec4899, #a855f7) !important;
     color: #ffffff !important;
-    padding: 12px 24px;
-    border-radius: 30px;
+    padding: 12px 24px !important;
+    border-radius: 30px !important;
     font-weight: 700 !important;
-    font-size: 0.8rem !important;
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.4);
-    min-width: 100px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 100;
+    font-size: 14px !important;
+    position: absolute !important;
+    top: -15px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.4) !important;
+    min-width: 100px !important;
+    width: auto !important;
+    height: auto !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    z-index: 100 !important;
     text-shadow: none !important;
     font-family: 'Inter', sans-serif !important;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    line-height: 1.2 !important;
+}
+
+/* Ensure text is visible with multiple selectors */
+.pricing-one .pricing-one__discount,
+.pricing-one__switch-toggle-title-box .pricing-one__discount {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #ec4899, #a855f7) !important;
+    display: block !important;
+    visibility: visible !important;
 }
 
 .pricing-one__discount:hover {
-    transform: translateX(-50%) translateY(-2px);
-    box-shadow: 0 12px 35px rgba(236, 72, 153, 0.5);
+    transform: translateX(-50%) translateY(-2px) !important;
+    box-shadow: 0 12px 35px rgba(236, 72, 153, 0.5) !important;
     background: linear-gradient(135deg, #f472b6, #c084fc) !important;
+    color: #ffffff !important;
+}
+
+/* Override responsive rules that hide the button */
+@media (max-width: 768px) {
+    .pricing-one__discount {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: absolute !important;
+        top: -12px !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+        font-size: 12px !important;
+        padding: 10px 20px !important;
+        min-width: 80px !important;
+        color: #ffffff !important;
+        background: linear-gradient(135deg, #ec4899, #a855f7) !important;
+    }
 }
 
 /* Pricing Cards */
