@@ -166,40 +166,7 @@
     opacity: 0 !important;
 }
 
-/* Ensure text is visible with multiple selectors */
-.pricing-one .pricing-one__discount,
-.pricing-one__switch-toggle-title-box .pricing-one__discount {
-    color: #ffffff !important;
-    background: linear-gradient(135deg, #ec4899, #a855f7) !important;
-    display: block !important;
-    visibility: visible !important;
-}
-
-.pricing-one__discount:hover {
-    transform: translateX(-50%) translateY(-2px) !important;
-    box-shadow: 0 12px 35px rgba(236, 72, 153, 0.5) !important;
-    background: linear-gradient(135deg, #f472b6, #c084fc) !important;
-    color: #ffffff !important;
-}
-
-/* Override responsive rules that hide the button */
-@media (max-width: 768px) {
-    .pricing-one__discount {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        position: absolute !important;
-        top: -12px !important;
-        left: 50% !important;
-        right: auto !important;
-        transform: translateX(-50%) !important;
-        font-size: 12px !important;
-        padding: 10px 30px !important;
-        min-width: 120px !important;
-        color: #ffffff !important;
-        background: linear-gradient(135deg, #ec4899, #a855f7) !important;
-    }
-}
+/* Button is now hidden - remove all related styles */
 
 /* Pricing Cards */
 /* Pricing Cards - Higher specificity */
