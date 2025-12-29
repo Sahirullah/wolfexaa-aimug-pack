@@ -8,6 +8,29 @@
     overflow: hidden !important;
 }
 
+/* Container and row spacing fixes */
+.testimonial-one .container {
+    max-width: 1400px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.testimonial-one .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+}
+
+.testimonial-one .row > [class*="col-"] {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-bottom: 30px !important;
+    display: flex !important;
+    align-items: stretch !important;
+}
+
 .testimonial-one::before {
     content: '';
     position: absolute;
@@ -88,10 +111,21 @@
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
     position: relative !important;
     overflow: hidden !important;
-    margin-bottom: 30px !important;
+    margin: 0 0 30px 0 !important;
     height: 100% !important;
     display: flex !important;
     flex-direction: column !important;
+}
+
+/* Override negative margins that cause overlap */
+.testimonial-one__single-5,
+.testimonial-one__single-6,
+.testimonial-one__single-8,
+.testimonial-one__single-9,
+.testimonial-one__single-11,
+.testimonial-one__single-12 {
+    margin-top: 0 !important;
+    margin-bottom: 30px !important;
 }
 
 .testimonial-one__single::before {
@@ -334,10 +368,22 @@
 @media (max-width: 1200px) {
     .testimonial-one__single {
         padding: 28px !important;
+        margin: 0 0 25px 0 !important;
     }
     
     .testimonial-one__title {
         font-size: 1.125rem !important;
+    }
+    
+    /* Override negative margins */
+    .testimonial-one__single-5,
+    .testimonial-one__single-6,
+    .testimonial-one__single-8,
+    .testimonial-one__single-9,
+    .testimonial-one__single-11,
+    .testimonial-one__single-12 {
+        margin-top: 0 !important;
+        margin-bottom: 25px !important;
     }
 }
 
@@ -352,6 +398,17 @@
     
     .testimonial-one__single {
         padding: 24px !important;
+        margin: 0 0 24px 0 !important;
+    }
+    
+    /* Override negative margins on mobile */
+    .testimonial-one__single-5,
+    .testimonial-one__single-6,
+    .testimonial-one__single-8,
+    .testimonial-one__single-9,
+    .testimonial-one__single-11,
+    .testimonial-one__single-12 {
+        margin-top: 0 !important;
         margin-bottom: 24px !important;
     }
     
