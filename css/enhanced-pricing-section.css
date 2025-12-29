@@ -162,8 +162,8 @@
 .pricing-one__discount {
     background: linear-gradient(135deg, #10b981, #059669);
     color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
+    padding: 10px 30px;
+    border-radius: 25px;
     font-weight: 600;
     font-size: 0.875rem;
     position: absolute;
@@ -171,6 +171,9 @@
     right: 50%;
     transform: translateX(50%);
     box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    min-width: 140px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* Pricing Cards */
